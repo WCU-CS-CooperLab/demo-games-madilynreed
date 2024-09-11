@@ -8,3 +8,7 @@ A template repository to publish games
 [Play CoinDash 9/4](https://wcu-cs-cooperlab.github.io/demo-games-madilynreed/main_scene_9_4)
 
 [Play CoinDash 9/6](https://wcu-cs-cooperlab.github.io/demo-games-madilynreed/hud)
+
+## SpaceRocks
+
+[Play SpaceRocks 9/9](https://wcu-cs-cooperlab.github.io/demo-games-madilynreed/sr_9_11)
