@@ -20,3 +20,5 @@ A template repository to publish games
 [Play CoinDash - phase 1](https://wcu-cs-cooperlab.github.io/demo-games-madilynreed/hud)
 
 all i currently have for phase 1 is the finished demo of coindash. I added obstacles but couldn't get that version to export properly. I would also like to add sounds and power ups, and will attempt those tomorrow.
+
+[Play CoinDash - phase 1 finished](https://wcu-cs-cooperlab.github.io/demo-games-madilynreed/proj1/phase1)
