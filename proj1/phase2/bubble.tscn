@@ -1,0 +1,37 @@
+[gd_scene load_steps=6 format=3 uid="uid://iljts78wqv2l"]
+
+[ext_resource type="Script" path="res://bubble.gd" id="1_g5gft"]
+[ext_resource type="Texture2D" uid="uid://df514b5cdwlcw" path="res://underwater_assets/bubble1.png" id="2_6a48b"]
+[ext_resource type="Texture2D" uid="uid://c6frbi1hx3tp4" path="res://underwater_assets/bubble2.png" id="3_msfnr"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_kdbh3"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_6a48b")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_msfnr")
+}],
+"loop": false,
+"name": &"default",
+"speed": 20.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_k6bt7"]
+radius = 21.095
+
+[node name="bubble" type="Area2D" groups=["coins"]]
+script = ExtResource("1_g5gft")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." groups=["coins"]]
+scale = Vector2(0.15, 0.15)
+sprite_frames = SubResource("SpriteFrames_kdbh3")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_k6bt7")
+
+[node name="Timer" type="Timer" parent="."]
+
+[connection signal="area_entered" from="." to="." method="_on_area_entered"]
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
