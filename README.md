@@ -27,3 +27,6 @@ all i currently have for phase 1 is the finished demo of coindash. I added obsta
 [Play CoinDash - phase 1 finished](https://wcu-cs-cooperlab.github.io/demo-games-madilynreed/proj1/phase1)
 
 [Play CoinDash - phase 2](https://wcu-cs-cooperlab.github.io/demo-games-madilynreed/proj1/phase2_final)
+
+## Project 2
+[Play Space Rocks - phase 1](https://wcu-cs-cooperlab.github.io/demo-games-madilynreed/proj2/phase1)
