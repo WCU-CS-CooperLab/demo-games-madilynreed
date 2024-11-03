@@ -32,3 +32,8 @@ all i currently have for phase 1 is the finished demo of coindash. I added obsta
 [Play Space Rocks - phase 1](https://wcu-cs-cooperlab.github.io/demo-games-madilynreed/proj2/phase1)
 
 [Play Spooky Space Rocks - phase 2](https://wcu-cs-cooperlab.github.io/demo-games-madilynreed/proj2/phase2)
+
+## Project 3
+[Play Infinite Flyer - phase 1](https://wcu-cs-cooperlab.github.io/demo-games-madilynreed/proj3/phase1)
+
+for phase 1, I have the completed Infinite Flyer demo, as well as an added pause option and a feature that tells you when you level up and displays your current level below your score. there is currently an issue with lighting and the title screen when playing in the browser.
