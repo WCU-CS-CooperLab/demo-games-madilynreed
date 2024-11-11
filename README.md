@@ -42,3 +42,5 @@ for phase 1, I have the completed Infinite Flyer demo, as well as an added pause
 
 # Group Projects
 ## Group Project 1
+
+[Play Treasure Beyond the Stone](https://wcu-cs-cooperlab.github.io/demo-games-madilynreed/teamProjs/teamProj1)
