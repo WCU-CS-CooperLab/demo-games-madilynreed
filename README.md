@@ -24,7 +24,8 @@ A template repository to publish games
 
 [Play CoinDash - phase 1](https://wcu-cs-cooperlab.github.io/demo-games-madilynreed/proj1/phase1)
 
-[Play Underwater CoinDash - phase 2](https://wcu-cs-cooperlab.github.io/demo-games-madilynreed/proj1/phase2_final)
+[Play Bubble Dash- phase 2](https://wcu-cs-cooperlab.github.io/demo-games-madilynreed/proj1/bubbleDash)
+
 
 ## Project 2
 [Play Space Rocks - phase 1](https://wcu-cs-cooperlab.github.io/demo-games-madilynreed/proj2/phase1)
