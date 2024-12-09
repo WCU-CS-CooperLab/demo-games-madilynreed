@@ -20,13 +20,11 @@ A template repository to publish games
 
 # Projects
 ## Project 1
-[Play CoinDash - phase 1](https://wcu-cs-cooperlab.github.io/demo-games-madilynreed/hud)
 
-all i currently have for phase 1 is the finished demo of coindash. I added obstacles but couldn't get that version to export properly. I would also like to add sounds and power ups, and will attempt those tomorrow.
 
-[Play CoinDash - phase 1 finished](https://wcu-cs-cooperlab.github.io/demo-games-madilynreed/proj1/phase1)
+[Play CoinDash - phase 1](https://wcu-cs-cooperlab.github.io/demo-games-madilynreed/proj1/phase1)
 
-[Play CoinDash - phase 2](https://wcu-cs-cooperlab.github.io/demo-games-madilynreed/proj1/phase2_final)
+[Play Underwater CoinDash - phase 2](https://wcu-cs-cooperlab.github.io/demo-games-madilynreed/proj1/phase2_final)
 
 ## Project 2
 [Play Space Rocks - phase 1](https://wcu-cs-cooperlab.github.io/demo-games-madilynreed/proj2/phase1)
@@ -42,3 +40,5 @@ for phase 1, I have the completed Infinite Flyer demo, as well as an added pause
 
 # Group Projects
 ## Group Project 1
+
+[Play Treasure Beyond the Stone](https://wcu-cs-cooperlab.github.io/demo-games-madilynreed/teamProjs/teamProj1)
