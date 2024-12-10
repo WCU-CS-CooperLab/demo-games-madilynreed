@@ -35,7 +35,6 @@ A template repository to publish games
 ## Project 3
 [Play Infinite Flyer - phase 1](https://wcu-cs-cooperlab.github.io/demo-games-madilynreed/proj3/phase1)
 
-for phase 1, I have the completed Infinite Flyer demo, as well as an added pause option and a feature that tells you when you level up and displays your current level below your score. there is currently an issue with lighting and the title screen when playing in the browser.
 
 [Play Aero Rings - phase 2](https://wcu-cs-cooperlab.github.io/demo-games-madilynreed/proj3/phase2)
 
@@ -49,4 +48,4 @@ for phase 1, I have the completed Infinite Flyer demo, as well as an added pause
 [Play Treasure Beyond the Stone](https://wcu-cs-cooperlab.github.io/demo-games-madilynreed/teamProjs/teamProj1)
 
 
-[Play platformer](platformer/windows.zip)
+
