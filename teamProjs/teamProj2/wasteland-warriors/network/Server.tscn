@@ -1,0 +1,44 @@
+[gd_scene load_steps=5 format=3 uid="uid://dgjr5wuxuf4ev"]
+
+[ext_resource type="Script" path="res://network/Server.gd" id="1_wjnk6"]
+[ext_resource type="Texture2D" uid="uid://b1m4ep0u87lnf" path="res://assets/client background.png" id="2_lb20b"]
+[ext_resource type="FontFile" uid="uid://dwijs1vm5k02p" path="res://assets/konstantine font.ttf" id="3_10hu3"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_wq0il"]
+font = ExtResource("3_10hu3")
+font_size = 30
+
+[node name="Main" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_wjnk6")
+
+[node name="background" type="TextureRect" parent="."]
+layout_mode = 0
+offset_left = -8.0
+offset_top = -4.0
+offset_right = 1151.0
+offset_bottom = 649.0
+texture = ExtResource("2_lb20b")
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -49.5
+offset_top = -44.0
+offset_right = 49.5
+offset_bottom = -14.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "SERVER"
+label_settings = SubResource("LabelSettings_wq0il")
+horizontal_alignment = 1
+vertical_alignment = 1

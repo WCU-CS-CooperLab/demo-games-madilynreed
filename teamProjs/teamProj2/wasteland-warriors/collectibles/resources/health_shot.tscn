@@ -1,0 +1,18 @@
+[gd_scene load_steps=4 format=3 uid="uid://bgsgjsxilmj58"]
+
+[ext_resource type="Script" path="res://collectibles/resources/health_shot.gd" id="1_ja3tw"]
+[ext_resource type="Texture2D" uid="uid://csylb53bmgixe" path="res://assets/Cyberpunk Resources/shot.png" id="1_o03rw"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_g2vl3"]
+radius = 21.095
+
+[node name="healthShot" type="Area2D"]
+script = ExtResource("1_ja3tw")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_o03rw")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_g2vl3")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

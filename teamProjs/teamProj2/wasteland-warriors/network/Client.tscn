@@ -1,0 +1,145 @@
+[gd_scene load_steps=6 format=3 uid="uid://dinggunv4ho2t"]
+
+[ext_resource type="Script" path="res://network/Client.gd" id="1_7r7i1"]
+[ext_resource type="Texture2D" uid="uid://b1m4ep0u87lnf" path="res://assets/client background.png" id="2_gdpsw"]
+[ext_resource type="FontFile" uid="uid://dwijs1vm5k02p" path="res://assets/konstantine font.ttf" id="3_bdm84"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_oymwe"]
+font = ExtResource("3_bdm84")
+font_color = Color(1, 0.2, 0.2, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_cu0th"]
+font = ExtResource("3_bdm84")
+font_size = 22
+outline_color = Color(0.000113828, 0.000113828, 0.000113828, 1)
+
+[node name="Main" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_7r7i1")
+game_scene = "res://Levels/field.tscn"
+
+[node name="background" type="TextureRect" parent="."]
+layout_mode = 0
+offset_left = -8.0
+offset_top = -4.0
+offset_right = 1151.0
+offset_bottom = 649.0
+texture = ExtResource("2_gdpsw")
+
+[node name="loginColorRect" type="ColorRect" parent="."]
+visible = false
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -150.0
+offset_top = -301.0
+offset_right = 150.0
+offset_bottom = 179.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 1)
+
+[node name="UserLineEdit" type="LineEdit" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -46.0
+offset_top = 12.5
+offset_right = 44.0
+offset_bottom = 50.5
+grow_horizontal = 2
+grow_vertical = 2
+placeholder_text = "username"
+alignment = 1
+
+[node name="PasswordLineEdit" type="LineEdit" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -46.0
+offset_top = 68.5
+offset_right = 44.0
+offset_bottom = 106.5
+grow_horizontal = 2
+grow_vertical = 2
+placeholder_text = "pasword"
+alignment = 1
+secret = true
+
+[node name="ErrorLabel" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 14
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -1.0
+offset_top = -71.0
+offset_right = -1.0
+offset_bottom = -48.0
+grow_horizontal = 2
+grow_vertical = 2
+label_settings = SubResource("LabelSettings_oymwe")
+horizontal_alignment = 1
+
+[node name="LoginButton" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 69.0
+offset_top = 75.5
+offset_right = 119.0
+offset_bottom = 106.5
+grow_horizontal = 2
+grow_vertical = 2
+text = "Login"
+
+[node name="StartButton" type="Button" parent="."]
+visible = false
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -52.0
+offset_top = -130.0
+offset_right = 52.0
+offset_bottom = -99.0
+grow_horizontal = 2
+grow_vertical = 0
+text = "Start match!"
+
+[node name="loggedPlayersLabel" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_top = 39.0
+offset_bottom = 299.0
+grow_horizontal = 2
+text = "Players in match:
+
+"
+label_settings = SubResource("LabelSettings_cu0th")
+horizontal_alignment = 1
+
+[connection signal="text_submitted" from="UserLineEdit" to="." method="_on_UserLineEdit_text_submitted"]
+[connection signal="text_submitted" from="PasswordLineEdit" to="." method="_on_PasswordLineEdit_text_submitted"]
+[connection signal="pressed" from="LoginButton" to="." method="_on_LoginButton_pressed"]
+[connection signal="pressed" from="StartButton" to="." method="_on_start_button_pressed"]

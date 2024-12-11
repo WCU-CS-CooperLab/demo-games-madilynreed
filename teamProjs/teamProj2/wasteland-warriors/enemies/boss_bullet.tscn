@@ -1,0 +1,28 @@
+[gd_scene load_steps=4 format=3 uid="uid://2jmnygpl1od4"]
+
+[ext_resource type="Script" path="res://enemies/boss_bullet.gd" id="1_7wsv8"]
+[ext_resource type="Texture2D" uid="uid://c5c5qyamh8ier" path="res://assets/bullet.png" id="2_sss4y"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_sd2nt"]
+radius = 2.75
+height = 14.0
+
+[node name="bossBullet" type="Area2D"]
+scale = Vector2(4, 4)
+script = ExtResource("1_7wsv8")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(6.75, 9)
+scale = Vector2(0.079375, 0.0750586)
+texture = ExtResource("2_sss4y")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0.75, -1.25)
+rotation = 1.5708
+shape = SubResource("CapsuleShape2D_sd2nt")
+
+[node name="VisibleOnScreenNotifier2D" type="VisibleOnScreenNotifier2D" parent="."]
+position = Vector2(0.75, -1.5)
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="screen_exited" from="VisibleOnScreenNotifier2D" to="." method="_on_visible_on_screen_notifier_2d_screen_exited"]

@@ -1,0 +1,27 @@
+{
+  "madi": {
+	"password":"test",
+	"avatar":"res://02.sending-and-receiving-data/Avatars/female_idle.png",
+	"name":"Madi"
+  },
+  "julie": {
+	"password":"test",
+	"avatar":"res://02.sending-and-receiving-data/Avatars/player_idle.png",
+	"name":"Julie"
+  },
+"gianna": {
+	"password":"test",
+	"avatar":"res://02.sending-and-receiving-data/Avatars/female_idle.png",
+	"name":"Gianna"
+  },
+"michael": {
+	"password":"test",
+	"avatar":"res://02.sending-and-receiving-data/Avatars/female_idle.png",
+	"name":"Michael"
+  },
+"derek": {
+	"password":"test",
+	"avatar":"res://02.sending-and-receiving-data/Avatars/female_idle.png",
+	"name":"Derek"
+  }
+}

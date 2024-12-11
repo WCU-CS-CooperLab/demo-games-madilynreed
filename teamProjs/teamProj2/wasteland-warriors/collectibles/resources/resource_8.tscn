@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=3 uid="uid://dvrt7751a2dgx"]
+
+[ext_resource type="Texture2D" uid="uid://bd7gx6tkesfd1" path="res://assets/Cyberpunk Resources/1 Icons/Icon14_32.png" id="1_bmoe4"]
+[ext_resource type="Script" path="res://collectibles/resources/resource.gd" id="1_scd51"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_kjxo0"]
+size = Vector2(29, 31)
+
+[node name="resource8" type="Area2D" groups=["resources"]]
+script = ExtResource("1_scd51")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_bmoe4")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0.5, 0.5)
+shape = SubResource("RectangleShape2D_kjxo0")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

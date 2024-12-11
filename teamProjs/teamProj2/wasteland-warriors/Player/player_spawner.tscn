@@ -1,0 +1,11 @@
+[gd_scene load_steps=2 format=3 uid="uid://b7ncm6lv63max"]
+
+[ext_resource type="Script" path="res://Player/player_spawner.gd" id="1_2k65l"]
+
+[node name="PlayerSpawner" type="Marker2D"]
+gizmo_extents = 32.0
+script = ExtResource("1_2k65l")
+
+[node name="MultiplayerSpawner" type="MultiplayerSpawner" parent="."]
+
+[connection signal="spawned" from="MultiplayerSpawner" to="." method="_on_multiplayer_spawner_spawned"]

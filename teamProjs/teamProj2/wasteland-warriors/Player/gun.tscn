@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3 uid="uid://dtmk788tukn8k"]
+
+[ext_resource type="Script" path="res://Player/gun.gd" id="1_4w4ro"]
+[ext_resource type="Texture2D" uid="uid://bhhtevo3k1ln1" path="res://assets/cyberpunk guns/1 Icons/Icon29_01.png" id="2_f12dg"]
+
+[node name="Gun" type="Node2D"]
+rotation = -6.28319
+script = ExtResource("1_4w4ro")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(21, 3.24838e-06)
+rotation = 0.785398
+texture = ExtResource("2_f12dg")

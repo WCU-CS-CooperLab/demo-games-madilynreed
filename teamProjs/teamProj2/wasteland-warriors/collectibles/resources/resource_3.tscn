@@ -1,0 +1,18 @@
+[gd_scene load_steps=4 format=3 uid="uid://disahtw3om7jk"]
+
+[ext_resource type="Texture2D" uid="uid://b6bcxruque27f" path="res://assets/Cyberpunk Resources/1 Icons/Icon14_08.png" id="1_57gdh"]
+[ext_resource type="Script" path="res://collectibles/resources/resource.gd" id="1_yuxhq"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_sqwwb"]
+radius = 17.0
+
+[node name="resource3" type="Area2D" groups=["resources"]]
+script = ExtResource("1_yuxhq")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_57gdh")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_sqwwb")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

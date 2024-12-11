@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://diel6qgch4i7b"
+path="res://.godot/imported/Sci-Fi Robot Power Down Sound Effect.mp3-547934638656cf15f84e0c45dde237ea.mp3str"
+
+[deps]
+
+source_file="res://assets/Sci-Fi Robot Power Down Sound Effect.mp3"
+dest_files=["res://.godot/imported/Sci-Fi Robot Power Down Sound Effect.mp3-547934638656cf15f84e0c45dde237ea.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

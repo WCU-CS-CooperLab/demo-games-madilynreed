@@ -1,0 +1,32 @@
+[gd_scene load_steps=5 format=3 uid="uid://dijnae7lhfhmb"]
+
+[ext_resource type="Script" path="res://Levels/field.gd" id="1_0lota"]
+[ext_resource type="PackedScene" uid="uid://bhycx3dfbdba" path="res://enemies/cyborg.tscn" id="2_jqctq"]
+[ext_resource type="Texture2D" uid="uid://cvfc37nacuhk2" path="res://assets/background fixed.png" id="3_ui1hc"]
+
+[sub_resource type="Curve2D" id="Curve2D_gj83q"]
+_data = {
+"points": PackedVector2Array(0, 0, 0, 0, -2, 0, 0, 0, 0, 0, 1150, 0, 0, 0, 0, 0, 1152, 648, 0, 0, 0, 0, -2, 0)
+}
+point_count = 4
+
+[node name="Field" type="Node"]
+script = ExtResource("1_0lota")
+cyborg_scene = ExtResource("2_jqctq")
+
+[node name="Background" type="Sprite2D" parent="."]
+position = Vector2(574, 231)
+scale = Vector2(0.745773, 0.59838)
+texture = ExtResource("3_ui1hc")
+
+[node name="EnemyPath" type="Path2D" parent="."]
+curve = SubResource("Curve2D_gj83q")
+
+[node name="EmemySpawn" type="PathFollow2D" parent="EnemyPath"]
+position = Vector2(-2, 0)
+
+[node name="WaveTimer" type="Timer" parent="."]
+wait_time = 30.0
+autostart = true
+
+[connection signal="timeout" from="WaveTimer" to="." method="_on_wave_timer_timeout"]
